@@ -10,7 +10,7 @@ for item in files_in_dir:
         os.remove(item)
  
  # Convert to jpg
-poppler_path = r"C:\Program Files\poppler-21.10.0\Library\bin"
+poppler_path = r"C:\CS8398\pdf_to_image\poppler-22.04.0\Library\bin"  # update this path
 # Store Pdf with convert_from_path function
 images = convert_from_path(pdf_path = 'example.pdf', poppler_path=poppler_path)
  
