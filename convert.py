@@ -22,3 +22,6 @@ images = convert_from_path(pdf_path = pdfPath)  # Mac: brew install poppler.
 for i in range(len(images)):
       # Save pages as images in the pdf
     images[i].save('page'+ str(i) +'.jpg', 'JPEG')
+
+# Delete the original PDF file after conversion
+os.remove(pdfPath)
